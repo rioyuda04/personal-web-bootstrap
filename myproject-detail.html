@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/myproject-detail.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <!-- import navbar -->
+    <nav class="navbar"></nav>
+    <!-- end -->
+    <div class="sub-bd d-flex w-100 justify-content-center align-items-center align-self-start flex-wrap">
+        <div class="d-flex w-100 justify-content-center align-self-start">
+            <h2>Dumbways Web App</h2>
+        </div>
+        <div class="profile d-flex w-100 justify-content-center align-self-start">
+            <div class="d-flex w-50 h-auto">
+                <img class="d-flex w-100" src="assets/images/laptop.jpg" alt="image"/>
+            </div>
+            <div class="d-flex w-50 justify-content-center align-self-start flex-wrap gap-3">
+                <div class="d-flex w-100 justify-content-start flex-wrap align-self-start gap-2">
+                    <label id="h-text-d" class="d-flex w-100 fs-5">Duration</label>
+                    <div id="calendar" class="d-flex w-100 align-items-center gap-3">
+                        <i class="fa fa-calendar"></i>
+                        <label> 6 Feb 2022 - 6 May 2022 </label>
+                    </div>
+                    <div id="clock" class="d-flex w-100 align-items-center gap-3">
+                        <i class="fa fa-clock-o"></i>
+                        <label> 3 Month </label>
+                    </div> 
+                </div>
+                <div class="d-flex w-100 justify-content-start flex-wrap gap-2">
+                    <label id="h-text-t" class="d-flex w-100 fs-5">Technologies</label>
+                    <div id="content-icon" class="d-flex w-100 align-self-start">
+                        <div id="left" class="d-flex flex-wrap gap-3">
+                            <span id="android" class="d-flex w-100 align-items-center gap-2">
+                                <i class="fa fa-android"></i>
+                                <label>Android</label>
+                            </span>
+                            <span id="apple" class="d-flex w-100 align-items-center gap-2">
+                                <i class="fa fa-apple"></i>
+                                <label>Apple</label>
+                            </span>
+                        </div>
+                        <div id="right" class="d-flex flex-wrap gap-3">
+                            <span id="windows" class="d-flex w-100 align-items-center gap-2">
+                                <i class="fa fa-windows"></i>
+                                <label>windows</label>
+                            </span>
+                            <span id="linux" class="d-flex w-100 align-items-center gap-2">
+                                <i class="fa fa-linux"></i>
+                                <label>linux</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-text w-100">
+            <p>
+                Web applications are typically described as cross-platform because, ideally, they are accessible from any web browser: the browser is the platform. Web applications generally employ a client–server model, but vary widely in complexity and functionality. It can be hard to reconcile the desire for features with the need for compatibility.
+                Basic web applications perform all or most processing from a stateless server, and pass the result to the client web browser. All user interaction with the application consists of simple exchanges of data requests and server responses. This type of application was the norm in the early phases of World Wide Web application development. Such applications follow a simple transaction model, identical to that of serving static web pages. Today, they are still relatively common, especially where cross-platform compatibility and simplicity are deemed more critical than advanced functionality.
+                Prominent examples of advanced web applications include the Web interface to Gmail, A9.com, Google Maps website, and the Live Search service (now Bing) from Microsoft. Such applications routinely depend on additional features found only in the more recent versions of popular web browsers. These features include Ajax, JavaScript, Dynamic HTML, SVG, and other components of rich web applications. Older versions often lack these.
+                Design Because of the competing interests of compatibility and functionality, numerous design strategies have emerged.
+                Many software systems use a layered architecture where platform-dependent code is restricted to the upper- and lowermost layers.
+            </p>
+            <p>
+                Graceful degradation attempts to provide the same or similar functionality to all users and platforms, while diminishing that functionality to a least common denominator for more limited client browsers. For example, a user attempting to use a limited-feature browser to access Gmail may notice that Gmail switches to basic mode, with reduced functionality but still of use.
+                Some software is maintained in distinct codebases for different (hardware and OS) platforms, with equivalent functionality. This requires more effort to maintain the code, but can be worthwhile where the amount of platform-specific code is high.
+                This strategy relies on having one codebase that may be compiled to multiple platform-specific formats. One technique is conditional compilation. With this technique, code that is common to all platforms is not repeated. Blocks of code that are only relevant to certain platforms are made conditional, so that they are only interpreted or compiled when needed. Another technique is separation of functionality, which disables functionality not supported by browsers or OSs, while still delivering a complete application to the user. (See also: Separation of concerns.) This technique is used in web development where interpreted code (as in scripting languages) can query the platform it is running on to execute different blocks conditionally.
+                Third-party libraries attempt to simplify cross-platform capability by hiding the complexities of client differentiation behind a single, unified API, at the expense of vendor lock-in.
+            </p>
+        </div>
+    </div>
+
+    <script src="assets/js/load.js"></script>
+</body>
+
+
+</html>
